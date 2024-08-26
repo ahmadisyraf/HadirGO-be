@@ -9,9 +9,9 @@ import {
   UseGuards,
 } from '@nestjs/common';
 import { User as UserModel } from '@prisma/client';
-import { UserService } from 'src/user/user.service';
 import * as bcrypt from 'bcrypt';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { UserService } from './user.service';
+import { AuthGuard } from '../auth/auth.guard';
 
 @Controller()
 export class UserController {
